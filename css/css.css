@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+    margin: 0px;
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: auto;
+}
+
+.title {
+    padding: 10px;
+    border-bottom: 2px solid;
+}
+
+.title h1 {
+    margin: 0px;
+    font-weight: normal;
+    text-shadow: 3px 3px 1px rgba(201, 9, 9, 0.4);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 70px;
+}
+
+.quickadd {
+    padding: 10px;
+    border-bottom: 2px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+#busca {
+    width: 400px;
+    height: 50px;
+    background-image: linear-gradient(to right, #79b3f4, #6fbaf8, #64c1fb, #5ac8fd, #52cffe);
+    border: 1px solid black;
+    border-radius: 30px;
+    justify-content: left;
+    font-family: 'Squada One', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#busca::placeholder{
+    color: black;
+    opacity: 0.7461;
+}
+
+
+
+#QuickAdd {
+    width: 300px;
+    height: 50px;
+    background-image: linear-gradient(to right, #b08bd3, #a891d9, #a096de, #989ce2, #90a1e5);
+    border: 1px solid black;
+    text-shadow: 0px 0px 1px;
+    transition-duration: 0.4s;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+#QuickAdd:hover {
+    color: white;
+
+}
+
+/* Tela de preenchimento*/
+.quickaddForm {
+    height: 400px;
+    padding: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.quickaddForm label {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 10px;
+    float: left;
+    font-size: 50px;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+}
+
+/* Quadro para preenchimento*/
+.quickaddForm input,
+textarea {
+    margin-top: 30px;
+    border: 2px solid black;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+/* Botao para adicionar contato*/
+#Add {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    left: 300px;
+    border: 1px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    font-family: 'Squada One', cursive;
+    background-image: linear-gradient(to right, #8aa7ec, #86aaee, #82adf0, #7db0f2, #79b3f4);
+}
+
+/* hover do botao de adicionar o contato */
+#Add:hover {
+    background-image: linear-gradient(to right top, #126d16, #138f1c, #12b322, #0cd827, #00ff2c);
+    color: white;
+
+}
+
+/* Botao para cancelar a adição de contato*/
+#cancelar {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    left: 300px;
+    border: 1px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    font-family: 'Squada One', cursive;
+    background-image: linear-gradient(to right top, #79b3f4, #75b6f5, #71b9f6, #6dbcf7, #69bff8);
+}
+
+/* hover do botao de cancelar */
+#cancelar:hover {
+    background-image: linear-gradient(to right, #ff5050, #ff4341, #ff3431, #ff221e, #ff0000);
+    color: white;
+
+}
+
+/* Lista de contatos */
+.entry {
+    width: 960px;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    align-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+.nomecompleto {
+    width: 240px;
+    float: left;
+    padding: 11px;
+    display: flex;
+    background-color: black;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    text-align: justify;
+
+}
+
+.id {
+    width: 50px;
+    float: left;
+    padding: 11px;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    text-align: justify;
+}
+
+.telefone {
+    width: 240px;
+    float: left;
+    padding: 11px;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    text-align: justify;
+}
+
+.del {
+    width: 100px;
+    padding: 8px;
+}
+
+p {
+    margin: 0px;
+    font-family: 'Lobster', cursive;
+    font-size: 12px;
+    text-shadow: 12px 12px 12px rgba(0, 0, 0, 0.4);
+}
+
+.del a {
+    width: 150px;
+    height: 20px;
+    font-family: 'Lobster', cursive;
+    color: #FFF;
+    font-size: 20px;
+    background: rgb(230, 92, 92);
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.del a:hover {
+    background-image: linear-gradient(to right, #ff5050, #ff4341, #ff3431, #ff221e, #ff0000);
+    color: white;
+
+
+}
